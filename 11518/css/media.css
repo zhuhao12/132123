@@ -1,0 +1,77 @@
+@media (max-width:1024px){	
+    nav a {
+        padding: 0 20px;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    .main-con {
+        width: 48%;
+    }
+}
+@media (max-width:768px){	
+    nav a {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    nav a:nth-of-type(2) {
+        display: none;
+    }
+    .header-logo {
+        font-size: 26px;
+    }
+    .main-con {
+        width: 100%;
+    }
+    .main-con-head {
+        line-height: 50px;
+    }
+    .main-con-head span:nth-of-type(1),
+    .index-content .index-btn button,
+    .savetimeMac-begin p, 
+    .stopwatch-begin p,
+    .calendar-content p {
+        font-size: 16px;
+    }
+    .index-content {
+        width: 90%;
+    }
+    .index-content .col span {
+        padding: 6px 20px;
+    }
+    .timer-title,
+    .savetimeMac, 
+    .stopwatch,
+    .player {
+        width: 80%;
+    }
+    .timer-title span {
+        font-size: 20px;
+    }
+    .momthName,
+    .calendar-content .calendar-content-title {
+        font-size: 24px;
+    }
+    #calendar .week li,
+    #calendar .dateList .ccc span {
+        font-size: 18px;
+    }
+}
+@media (max-width:475px){	
+    nav {
+        display: none;
+    }
+    .momthName,
+    .calendar-content .calendar-content-title {
+        font-size: 20px;
+    }
+    #calendar .week li,
+    #calendar .dateList .ccc span {
+        font-size: 14px;
+    }
+    #calendar .dateList .ccc span {
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+    }
+}

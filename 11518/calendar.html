@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+	<div class="container calendar">
+		<!-- header content -->
+		<header>
+			<div class="header-con">
+				<a href="calendar.html">
+					<img src="images/calendar.png" alt="">
+				</a>
+				<nav>
+					<a href="index.html">KANBAN BOARD</a>
+					<a href="javascript:;">Details</a>
+				</nav>
+			</div>
+			<a href="index.html" class="header-logo">STUDY-<i>E</i></a>
+		</header>
+		<span class="momthName"></span>
+		<div id="calendar">
+			<ul class="week">
+				<li>Sun</li>
+				<li>Mon</li>
+				<li>Tue</li>
+				<li>Wed</li>
+				<li>Thu</li>
+				<li>Fri</li>
+				<li>Sat</li>
+			</ul>
+			<ul class="dateList" id="dateList"></ul>
+		</div>
+		<div class="calendar-content">
+			<p class="calendar-content-title date"></p>
+			<p class="calendar-content-title">To do</p>
+			<p>IETS words learning</p>
+			<p>Read Three social media report on Covid impact China Economic</p>
+			<p>Read 200 words English report translate to Chinese</p>
+			<p>Write 800 words essay about why Covid-19 import Business</p>
+		</div>
+
+		<div class="fixed-mask"></div>
+		<div class="fixed-bottom">
+			<div class="fixed-bottom-con timer-icon">
+				<img src="images/shijian.png" alt="">
+				<span class="showTime">30:00</span>
+			</div>
+			<div class="fixed-bottom-con music-icon">
+				<img src="images/bofang.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-timer">
+		<img src="images/close.png" class="timer-close" alt="">
+		<div class="timer-title">
+			<div>
+				<img src="images/shijian.png" alt="">
+				<span class="timer-title-set">SavetimeMAC</span>
+			</div>
+			<img src="images/qiehuan.png" class="change-timer" alt="">
+		</div>
+		<div class="savetimeMac">
+			<div class="timer-set">
+				<img src="images/jian.png" class="savetimeMac-reduce" alt="">
+				<span class="savetimeMac-time">30:00</span>
+				<img src="images/jia.png" class="savetimeMac-add" alt="">
+			</div>
+			<div class="quickSet">
+				<p class="savetimeMac-quickSet">QuickSet</p>
+				<p class="savetimeMac-quickSet-time">30:00</p>
+			</div>
+			<div class="timer-btn">
+				<button class="savetimeMac-start savetimeMac-btn">Start</button>
+				<button class="savetimeMac-finish savetimeMac-btn">Finish</button>
+			</div>
+			<div class="savetimeMac-begin">
+				<div class="progess">
+					<p>Processing</p>
+					<div id="progess-main">
+						<div id="progess-percent"></div>
+					</div>
+				</div>
+				<p>Read study and learn about</p>
+				<p>everything important in you life</p>
+			</div>
+		</div>
+		<div class="stopwatch">
+			<div class="stopwatch-time">
+				<span class="stopwatch-h">00</span>
+				<span>:</span>
+				<span class="stopwatch-s">00</span>
+				<span>:</span>
+				<span class="stopwatch-m">00</span>
+			</div>
+			<div class="timer-btn">
+				<button class="stopwatch-start stopwatch-btn">Start</button>
+				<button class="stopwatch-stop stopwatch-btn">Stop</button>
+				<button class="stopwatch-reset stopwatch-btn">Reset</button>
+			</div>
+			<div class="stopwatch-begin">
+				<p class="stopwatch-p1">You growth is defined by the obstacles that you overcome</p>
+				<p class="stopwatch-p2">The stars change, but mind remains the same</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-music">
+		<img src="images/close.png" class="music-close" alt="">
+		<div class="player">
+			<div class="player-top">
+				<img src="images/calendar.png" class="music-cover" alt="">
+			</div>
+			<p class="author">author</p>
+			<p class="name">name</p>
+			<div class="progress-box">
+				<!-- Drag and drop to control music playing progress -->
+				<div class="progress-bar">
+					<div class="progress-dragger"></div>
+				</div>
+			</div>
+			<!-- music time -->
+			<div class="playTime">
+				<!-- music start time -->
+				<span class="time current-time">00:00</span>
+				<!-- music end time -->
+				<span class="time duration">00:00</span>
+			</div>
+			<audio src="music/PO8 - 霓虹.mp3" id="audio"></audio>
+			<div class="pcontrol">
+				<!-- Play the previous song -->
+				<img class="prev" src="images/prev.png" alt="">
+				<!-- play and pause -->
+				<img class="play-pause" src="images/bofang.png" alt="">
+				<!-- Play next song -->
+				<img class="next" src="images/next.png" alt="">
+			</div>
+			<div class="music-btn">
+				<p class="next-song">Next song</p>
+				<p class="memories">MEMORIES</p>
+			</div>
+			<div class="music-list">
+				<p class="prev-song">Up next</p>
+				<ul class="music-con"></ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/calendar.js"></script>
+	<script src="js/timer.js"></script>
+	<script src="js/music.js"></script>
+</body>
+
+</html>
